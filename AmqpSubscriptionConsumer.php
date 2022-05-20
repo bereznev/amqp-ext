@@ -70,10 +70,6 @@ class AmqpSubscriptionConsumer implements InteropAmqpSubscriptionConsumer
                 }
             }, AMQP_JUST_CONSUME);
         } catch (\AMQPQueueException $e) {
-            if ('Consumer timeout exceed' == $e->getMessage()) {
-                return;
-            }
-
             throw $e;
         } finally {
             $extConnection->setReadTimeout($originalTimeout);
