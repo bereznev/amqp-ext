@@ -1,5 +1,5 @@
 {
-    "name": "bereznev/amqp-ext",
+    "name": "enqueue/amqp-ext",
     "type": "library",
     "description": "Message Queue Amqp Transport",
     "keywords": ["messaging", "queue", "amqp"],
